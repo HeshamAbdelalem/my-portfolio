@@ -142,3 +142,45 @@ header li{
     font-weight: bold;
 }
 
+
+/* 
+***************Boxes Styles***************
+*/
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+
+/* 
+***************Footer Styles***************
+*/
+
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color:#e8491d;
+    text-align: center;
+        border-top: 2px solid #35424a;
+            border-bottom: 2px solid #35424a;
+
+
+}
+
+footer .special-footer{
+    font-weight: bold;
+}
