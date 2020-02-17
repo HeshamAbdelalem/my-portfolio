@@ -1,7 +1,8 @@
 /* *Main Styles - Start */
 :root {
-  --white: #fafafa;
+  --white: #fff;
   --black: #333333;
+  --offwhite: #f7f7f7;
 }
 *,
 *::after,
@@ -25,6 +26,15 @@ body {
   padding: 30px 2rem;
   overflow: hidden;
   text-align: center;
+}
+
+main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 2rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--offwhite);
 }
 
 a {
