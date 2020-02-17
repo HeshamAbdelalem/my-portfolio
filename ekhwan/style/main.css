@@ -1,0 +1,149 @@
+/* *Main Styles - Start */
+:root {
+  --white: #fafafa;
+  --black: #333333;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  background-color: var(--white);
+  font-family: 'Amiri', serif;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+p {
+  font-size: 1.3rem;
+  padding: 20px 0px;
+}
+
+img {
+  width: 400px;
+  float: left;
+  padding: 10px 10px 10px 0px;
+  clear: both;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+}
+
+.img-cap {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #b8833f;
+  padding: 0;
+}
+
+h2 {
+  color: darkslategrey;
+  text-decoration: underline;
+}
+
+/* *Main Styles - End */
+
+/* *Nav Styles - Start */
+
+nav {
+  background-color: var(--black);
+  color: white;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  font-size: 2rem;
+  font-family: 'Cairo', sans-serif;
+  padding: 40px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 40px;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: #fafafac9;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  animation: shake 2s ease-in-out 0s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-10px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* *Nav Styles - End */
+
+/* *Main Style - Start */
+.docs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 850px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+  nav h1 {
+    padding: 1rem 0rem;
+    font-size: 1.8rem;
+  }
+  
+}
