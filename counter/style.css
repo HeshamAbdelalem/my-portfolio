@@ -1,0 +1,54 @@
+/* reset styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #100e17;
+  color: #eee;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 4rem;
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter__status h2 {
+  color: #fbca92;
+}
+
+.counter__buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.btn {
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn.increase:hover {
+  background-color: #379537;
+  color: #eee;
+}
+.btn.decrease:hover {
+  background-color: #95374d;
+  color: #eee;
+}
+.btn.reset:hover {
+  background-color: #2937ff;
+  color: #eee;
+}
