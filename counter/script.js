@@ -8,14 +8,17 @@ countNum = 0;
 increaseBtn.addEventListener('click', () => {
   countNum = countNum + 1;
   count.textContent = countNum;
+  navigator.vibrate(1000);
 });
 
 decreaseBtn.addEventListener('click', () => {
   countNum = countNum - 1;
   count.textContent = countNum;
+  navigator.vibrate(1000);
 });
 
 resetBtn.addEventListener('click', () => {
   countNum = 0;
   count.textContent = countNum;
+  navigator.vibrate(1000);
 });
